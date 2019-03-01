@@ -30,30 +30,46 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.forEach is used for iterating or looping over individual items in an array, while .map is used for converting, manipulating, and extracting specific data information into a new array without changing the original dataset/array.
+
 2. What is the difference between a function and a method?
+
+A function allows us to execute a chunk of code. A method is a function that is inside of an object; a function assigned to an object property. All methods are functions, but not all functions are methods as they don’t have to be bound to an object property (unless considering that everything in Javascript is ultimately an object).
 
 3. What is closure?
 
+A closure is a combination of a function and the lexical (originating) environment within which that function was declared. Closures give inner/embedded functions or variables access to context outward, but not vice versa.
+
 4. Describe the four rules of the 'this' keyword.
 
+1.Window: 'this' keyword defaults to window object because the function is in the global scope.
+
+2.Implicit Binding: (uses object literals) The 'this' keyword references the object to the left of dot when the method is being invoked. (objectName.method, this = objectName).
+
+3.Explicit Binding: uses specific function methods .call .apply and .bind (also the spread operator) to bind and define the 'this' keyword to an outside context/object.
+
+4.New Keyword Binding: uses constructor functions (capitalized first letter) to build reusable object literals that bind the 'this' keyword to new objects. (When a function is invoked with a new keyword, the 'this' keyword inside that function is bound to the new object being constructed.)
+
 5. Why do we need super() in an extended class?
+
+The super() command needs to be declared in child classes because it replaces the .call and Object.create commands in order to inherit all attributes/properties and methods from the parent class.
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add PM as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [x] You are now ready to build this project with your preferred IDE
+- [x] Implement the project on your Branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
 - [ ] Add your Project Manager as a Reviewer on the Pull-request
 - [ ] PM then will count the HW as done by  merging the branch back into master.
 
