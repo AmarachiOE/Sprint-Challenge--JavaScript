@@ -38,7 +38,7 @@ console.log(consume("Mary","Poppins", greeting)); // Hello Mary Poppins, nice to
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: 
+// Explanation: A closure is defined as a combination of a function and the lexical (originating) environment within which that function was declared. Closures give inner/nested functions or variables access to context outward, but not vice versa. Because `nestedfunction()` is nested in `myFunction()` in whose scope declared the `internal` variable, `nestedfunction()` has access to that variable and any other variable in its outer scope. Closures allow access to variables from above functions to nested functions automatically.
 
 
 const external = "I'm outside the function";
